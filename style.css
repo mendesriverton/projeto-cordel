@@ -17,10 +17,7 @@
     --font03: 'Sriracha', cursive;
 }
 
-html, body {
-    min-height: 100vh;
-    background-color: darkgray;
-}
+
 
 header {
     background-color: black;
@@ -40,13 +37,13 @@ header > p {
     font-family: var(--font01);
 }
 
-header a, footer a {
+a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-header a:hover, footer a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -54,9 +51,13 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
+    font-family: var(--font03);
+    font-size: 3.5vw;
+    line-height: 2em;
+    
 }
 
-main > section.normal {
+section.normal {
     background-color: white;
     display: block;
     
@@ -82,14 +83,14 @@ section.imagem > p {
     text-shadow: 1px 1px 0px black;
 }
 
-main > section.imagem {
+section.imagem {
     background-size: cover;
     background-attachment: fixed;
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     
 }
 
-main > section#joaninha {
+#joaninha {
     background-image: url('imagens/background001.jpg');
     background-position: right center;
     background-attachment: fixed;
@@ -97,13 +98,14 @@ main > section#joaninha {
 
 }
 
-main > section#livro {
+#livro {
     background-image: url('imagens/background002.jpg');
     background-position: left center;
     background-attachment: fixed;
 }
 
 footer {
+    font-family: var(--font01);
     background-color: black;
     color: white;
     text-align: center;
